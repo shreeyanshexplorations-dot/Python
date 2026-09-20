@@ -8,7 +8,7 @@ for i in range(4):
     root.columnconfigure(i, weight=1, minisize=75)
     root.rowconfigure(i, weight=1, minsize=50)
     for j in range(0, 3):
-        frame = Frame(mater=root, relief=SUNKEN, borderwidth=1)
+        frame = Frame(master=root, relief=SUNKEN, borderwidth=1)
         frame.grid(row=i, column=j)
         label = Label(master=frame, text=nums[i][j], bg='#d0efff')
         label.pack(padx=3, pady=3)
